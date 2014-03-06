@@ -162,7 +162,7 @@ namespace VAX11Internals
 		{
 			CodeBlock rhs = (CodeBlock)o;
 			if (_MachineCode.Length != rhs._MachineCode.Length) return false;
-			for (int iCounter = 0; iCounter < _MachineCode.Length; ++iCounter) if (_MachineCode[iCounter] != _MachineCode[iCounter]) return false;
+			for (int iCounter = 0; iCounter < _MachineCode.Length; ++iCounter) if (_MachineCode[iCounter] != rhs._MachineCode[iCounter]) return false;
 			return true;
 		}
 

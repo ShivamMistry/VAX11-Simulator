@@ -1,11 +1,11 @@
 <SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
 <SOAP-ENV:Body>
-<a1:SettingsCover id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/VAX11Settings/VAX11Simulator%2C%20Version%3D1.0.5178.20841%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<a1:SettingsCover id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/VAX11Settings/VAX11Simulator%2C%20Version%3D1.0.5178.21275%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
 <Environment href="#ref-3"/>
 <Assembler href="#ref-4"/>
 <Simulator href="#ref-5"/>
 </a1:SettingsCover>
-<a1:SettingsCover_x002B__Environment id="ref-3" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/VAX11Settings/VAX11Simulator%2C%20Version%3D1.0.5178.20841%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<a1:SettingsCover_x002B__Environment id="ref-3" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/VAX11Settings/VAX11Simulator%2C%20Version%3D1.0.5178.21275%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
 <TEXT_COLOR>
 <name xsi:null="1"/>
 <value>0</value>
@@ -76,16 +76,16 @@
 <bDoSyntaxHighlight>true</bDoSyntaxHighlight>
 <bShowAgentOnStartup>true</bShowAgentOnStartup>
 <bLoadLastFileOnStartup>false</bLoadLastFileOnStartup>
-<sLastFileLocation id="ref-7"></sLastFileLocation>
+<sLastFileLocation id="ref-7">M:\FirstYear\ICAR\Practical13\task5.asm</sLastFileLocation>
 <a_sLastFiles href="#ref-8"/>
-<EditModeLayout href="#ref-7"/>
-<DebugModeLayout href="#ref-7"/>
+<EditModeLayout id="ref-9"></EditModeLayout>
+<DebugModeLayout href="#ref-9"/>
 </a1:SettingsCover_x002B__Environment>
-<a1:SettingsCover_x002B__Assembler id="ref-4" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/VAX11Settings/VAX11Simulator%2C%20Version%3D1.0.5178.20841%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<a1:SettingsCover_x002B__Assembler id="ref-4" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/VAX11Settings/VAX11Simulator%2C%20Version%3D1.0.5178.21275%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
 <bOptimaizeCode>true</bOptimaizeCode>
 <bSaveLSTFileAfterCompile>false</bSaveLSTFileAfterCompile>
 </a1:SettingsCover_x002B__Assembler>
-<a1:SettingsCover_x002B__Simulator id="ref-5" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/VAX11Settings/VAX11Simulator%2C%20Version%3D1.0.5178.20841%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<a1:SettingsCover_x002B__Simulator id="ref-5" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/VAX11Settings/VAX11Simulator%2C%20Version%3D1.0.5178.21275%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
 <PageSize>512</PageSize>
 <MemorySize>65536</MemorySize>
 <bShowAccessesToMemory>false</bShowAccessesToMemory>
@@ -115,11 +115,11 @@
 <iStackSize>65536</iStackSize>
 </a1:SettingsCover_x002B__Simulator>
 <SOAP-ENC:Array id="ref-8" SOAP-ENC:arrayType="xsd:string[5]">
-<item href="#ref-7"/>
-<item href="#ref-7"/>
-<item href="#ref-7"/>
-<item href="#ref-7"/>
-<item href="#ref-7"/>
+<item id="ref-10">M:\FirstYear\ICAR\Practical13\task5.asm</item>
+<item href="#ref-9"/>
+<item href="#ref-9"/>
+<item href="#ref-9"/>
+<item href="#ref-9"/>
 </SOAP-ENC:Array>
 </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>

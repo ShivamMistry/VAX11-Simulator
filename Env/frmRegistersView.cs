@@ -251,13 +251,24 @@ namespace VAX11Environment
 			reg = r;
 		}
 
+        private delegate void UpdateRegistersCallback();
+
 		/// <summary>
 		/// Update the view - if the values of the registers had changed.
 		/// </summary>
 		public void UpdateRegistersDisplay()
 		{
-			lstRegisters.Refresh();
-		}
+            if (lstRegisters.InvokeRequired)
+            {
+                UpdateRegistersCallback cb = new UpdateRegistersCallback(lstRegisters.Refresh);
+                this.Invoke(cb, new object[] { });
+            }
+            else
+            {
+                lstRegisters.Refresh();
+            }
+        }
+
 
 		private void lstRegisters_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
 		{
