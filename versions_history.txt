@@ -1,0 +1,130 @@
+New on 1.03:
+**************
+
+Bugs Fix:
+-----------
+40. We didn't create LST files well for filenames with capital extension, ie. .ASM.
+41. Pressing Ctrl+G when the file was empty cuases the simulator to crash
+42. Fixed bug in bbs, bbc commands - doesn't make the simulator crashs anymore
+
+Feutures:
+-----------
+* Added option to disable the physical memory simulation - 
+  Improving the simulator speed by almost 100%
+
+
+New on 1.02:
+**************
+
+Bugs Fix:
+-----------
+37. ".long label1, label2" when both labels need to be filled in pass2 didn't
+    compile correctly
+38. 2 missing addressing modes added
+39. Fixed bug: free didn't update the pointers in the array correctly
+
+New on 1.01:
+**************
+
+Bugs Fix:
+-----------
+36. Minor interface fixes
+
+
+
+
+New on 1.00:
+**************
+
+Bugs Fix:
+-----------
+26. cmp didn't work well with negative numbers
+27. Pressing on Arrows keys on console make the console to stop responding
+28. decl didn't raise overflow flag
+29. Creating LST file using Ctrl+L shortcut marked the original document
+    as "need to be saved" even if the user didn't actually changed it
+30. Many of the examples of the help didn't work as "%x" has changed to "%lx"
+    sometime in the way.
+31. Icon for cut/copy/paste in the toolbar was incorrect
+32. Program sometimes crashed when the user pressed on F5/F11
+33. Paste didn't update breakpoints correctly
+34. If opcode type was 'b', $NUMBER addressing mode didn't code correctly
+35. The assembler didn't allocate enough space for pass2 if two undefined
+    labels were on the same line.
+
+Feutures:
+-----------
+* Removed SandBar for stability
+
+
+
+
+New on 0.66:
+**************
+
+Bugs Fix:
+-----------
+21. The offset in addressing mode offset[rX] calculated incorrectly
+22. Output interupts didn't work.
+23. In index addressing mode index register and base address register have to be different
+24. Bug with pass2 of the compiler and addressing mode from type 'a' (didn't save enough space).
+25. calls, callg ignore masking of R11
+
+Feutures:
+-----------
+* Many new icons to the menu and the toolbar
+
+
+
+
+New on 0.65:
+**************
+
+Bugs Fix:
+-----------
+12. Solved hebrew problem - couldn't save files containing hebrew
+13. Multplies spaces inside a string were becoming a single space
+14. Pressing on X button sometimes closed the wrong window
+15. Software Interrupts not always work (problem with Math.Log function)
+16. cvt opcode didn't always change the overflow flag correctly
+17. offset[rX] addressing mode compiled as offset(rX)
+18. (rX), (rX)+, -(rX) passed compile when needed Branch addressing mode
+19. *(rX)+ didn't increment the register correctly
+20. *(rX)+[rY] didn't increment rX correctly
+
+
+Feutures:
+-----------
+* Added PSL to the special registers view
+* Switched the menus and the toolbar to SandBar library - new look for the simulator
+* Extended the simulator's help
+* Compiler is much faster now - reducing the number of memory allocations by 1:1000
+
+
+
+
+New on 0.64:
+**************
+
+Bugs Fix:
+-----------
+1.  puts bug - string like "hello\\" displayed incorrectly
+2.  output using special register crashed the simulator
+3.  scanf - we counted the parameters when we used "%*d".
+4.  scanf - scanf need always to write 4 bytes.
+5.  printf: printed 0 when needed to print negative numbers
+6.  The option "Show LST file after compiling caused an infinite loop
+7.  If we close the program in the middle of input function, we don't close debug mode
+8.  free function failed on some conditions to free memory
+9.  fixed bug that prevert ".set LABEL, '?" to pass compile
+10. Reading end of line from input files didn't work correctly
+11. paste text in the console window sent "\r\n" instead of "\n".
+    Now pasting text to programs will work as expected
+
+Feutures:
+-----------
+* memory updates display only on breaks now.
+* added option to control the compile errors background color
+* Added LABEL/CONSTANT to the LST file display
+
+

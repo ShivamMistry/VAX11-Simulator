@@ -1,0 +1,5 @@
+M:\FirstYear\ICAR\vax11-simulator-ng\PropertyBagLib\bin\Debug\PropertyBagLib.dll
+M:\FirstYear\ICAR\vax11-simulator-ng\PropertyBagLib\bin\Debug\PropertyBagLib.pdb
+M:\FirstYear\ICAR\vax11-simulator-ng\PropertyBagLib\obj\Debug\PropertyBagLib.csprojResolveAssemblyReference.cache
+M:\FirstYear\ICAR\vax11-simulator-ng\PropertyBagLib\obj\Debug\PropertyBagLib.dll
+M:\FirstYear\ICAR\vax11-simulator-ng\PropertyBagLib\obj\Debug\PropertyBagLib.pdb

@@ -1,0 +1,125 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:SettingsCover id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/VAX11Settings/VAX11Simulator%2C%20Version%3D1.0.5178.20472%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<Environment href="#ref-3"/>
+<Assembler href="#ref-4"/>
+<Simulator href="#ref-5"/>
+</a1:SettingsCover>
+<a1:SettingsCover_x002B__Environment id="ref-3" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/VAX11Settings/VAX11Simulator%2C%20Version%3D1.0.5178.20472%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<TEXT_COLOR>
+<name xsi:null="1"/>
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+</TEXT_COLOR>
+<COMMENT_COLOR>
+<name xsi:null="1"/>
+<value>0</value>
+<knownColor>79</knownColor>
+<state>1</state>
+</COMMENT_COLOR>
+<LABEL_COLOR>
+<name xsi:null="1"/>
+<value>0</value>
+<knownColor>39</knownColor>
+<state>1</state>
+</LABEL_COLOR>
+<FUNCTION_COLOR>
+<name xsi:null="1"/>
+<value>0</value>
+<knownColor>141</knownColor>
+<state>1</state>
+</FUNCTION_COLOR>
+<DIRECTIVE_COLOR>
+<name xsi:null="1"/>
+<value>0</value>
+<knownColor>37</knownColor>
+<state>1</state>
+</DIRECTIVE_COLOR>
+<COMMAND_COLOR>
+<name xsi:null="1"/>
+<value>0</value>
+<knownColor>37</knownColor>
+<state>1</state>
+</COMMAND_COLOR>
+<STRING_COLOR>
+<name xsi:null="1"/>
+<value>0</value>
+<knownColor>78</knownColor>
+<state>1</state>
+</STRING_COLOR>
+<BACKGROUND_COLOR>
+<name xsi:null="1"/>
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+</BACKGROUND_COLOR>
+<DEBUG_LINE_COLOR>
+<name xsi:null="1"/>
+<value>0</value>
+<knownColor>166</knownColor>
+<state>1</state>
+</DEBUG_LINE_COLOR>
+<BREAKPOINT_COLOR>
+<name xsi:null="1"/>
+<value>0</value>
+<knownColor>89</knownColor>
+<state>1</state>
+</BREAKPOINT_COLOR>
+<ERRORS_COLOR>
+<name xsi:null="1"/>
+<value>0</value>
+<knownColor>102</knownColor>
+<state>1</state>
+</ERRORS_COLOR>
+<OpenLSTFileAfterCompile>false</OpenLSTFileAfterCompile>
+<bDoSyntaxHighlight>true</bDoSyntaxHighlight>
+<bShowAgentOnStartup>true</bShowAgentOnStartup>
+<bLoadLastFileOnStartup>false</bLoadLastFileOnStartup>
+<sLastFileLocation id="ref-7"></sLastFileLocation>
+<a_sLastFiles href="#ref-8"/>
+<EditModeLayout href="#ref-7"/>
+<DebugModeLayout href="#ref-7"/>
+</a1:SettingsCover_x002B__Environment>
+<a1:SettingsCover_x002B__Assembler id="ref-4" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/VAX11Settings/VAX11Simulator%2C%20Version%3D1.0.5178.20472%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<bOptimaizeCode>true</bOptimaizeCode>
+<bSaveLSTFileAfterCompile>false</bSaveLSTFileAfterCompile>
+</a1:SettingsCover_x002B__Assembler>
+<a1:SettingsCover_x002B__Simulator id="ref-5" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/VAX11Settings/VAX11Simulator%2C%20Version%3D1.0.5178.20472%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<PageSize>512</PageSize>
+<MemorySize>65536</MemorySize>
+<bShowAccessesToMemory>false</bShowAccessesToMemory>
+<bShowPhysicalAddresses>false</bShowPhysicalAddresses>
+<bShowPageFaults>false</bShowPageFaults>
+<bEnablePhysicalMemorySimulation>false</bEnablePhysicalMemorySimulation>
+<bFillUninitalizeMemoryWithGarbage>false</bFillUninitalizeMemoryWithGarbage>
+<bShowMemoryAsHex>true</bShowMemoryAsHex>
+<ConsoleTextColor>
+<name xsi:null="1"/>
+<value>4278241280</value>
+<knownColor>0</knownColor>
+<state>2</state>
+</ConsoleTextColor>
+<ConsoleBackGroundColor>
+<name xsi:null="1"/>
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+</ConsoleBackGroundColor>
+<bConsoleAlwaysOnTopOnDebug>false</bConsoleAlwaysOnTopOnDebug>
+<ClockResolution>10</ClockResolution>
+<bShowRegistersInHex>true</bShowRegistersInHex>
+<bShowSpecialRegisters>false</bShowSpecialRegisters>
+<bShowDebugInformation>false</bShowDebugInformation>
+<iSP>16776960</iSP>
+<iStackSize>65536</iStackSize>
+</a1:SettingsCover_x002B__Simulator>
+<SOAP-ENC:Array id="ref-8" SOAP-ENC:arrayType="xsd:string[5]">
+<item href="#ref-7"/>
+<item href="#ref-7"/>
+<item href="#ref-7"/>
+<item href="#ref-7"/>
+<item href="#ref-7"/>
+</SOAP-ENC:Array>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

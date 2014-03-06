@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1B22109-93B3-4D10-8E01-92D8757103C0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Env\App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>VAX11Simulator</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VAX11Simulator</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="AgentObjects">
+      <Guid>{F5BE8BC2-7DE6-11D0-91FE-00C04FD701A5}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="AgentServerObjects">
+      <Guid>{A7B93C73-7B81-11D0-AC5F-00C04FD97575}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="AxAgentObjects">
+      <Guid>{F5BE8BC2-7DE6-11D0-91FE-00C04FD701A5}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <ProjectReference Include="PCSpeakerLib\PCSpeakerLib.csproj">
+      <Name>PCSpeakerLib</Name>
+      <Project>{53A87DB5-AAE2-470D-A32B-6CADAAEA1D79}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="PropertyBagLib\PropertyBagLib.csproj">
+      <Name>PropertyBagLib</Name>
+      <Project>{6B1DF9F8-8DF9-4673-9C53-41423596DF65}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="DockingSuite">
+      <Name>DockingSuite</Name>
+      <HintPath>dlls\DockingSuite.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentManager">
+      <Name>DocumentManager</Name>
+      <HintPath>dlls\DocumentManager.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetWidgets">
+      <Name>DotNetWidgets</Name>
+      <HintPath>dlls\DotNetWidgets.dll</HintPath>
+    </Reference>
+    <Reference Include="RichTextExLib">
+      <Name>RichTextExLib</Name>
+      <HintPath>dlls\RichTextExLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compiler\Assembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\CompileError.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\CompilerComment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\CompilerMessages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\LinesLocations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\Pass2List.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\SymbolsTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Env\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Env\BreakPointEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Env\Calc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Env\envExceptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Env\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Env\frmAddEditWatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Env\frmCompileMessages.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Env\frmEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Env\frmFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Env\frmGoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Env\frmInputOutputFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Env\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Env\frmMemoryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Env\frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Env\frmRegistersView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Env\frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Env\frmStackView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Env\frmTaskList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Env\Program.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Internals\CodeBlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Internals\CodeProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Internals\KnownFunctions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Internals\OpcodeEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Internals\PanicException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Internals\ProgramBlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Internals\Registers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Settings\Settings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Settings\SettingsCover.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Simulator\Console.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simulator\KnownFunctions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Simulator\Memory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Simulator\Operand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Simulator\Registers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Simulator\RuntimeError.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Simulator\Simulator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Simulator\SimulatorEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Simulator\SimulatorMessages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Simulator\VAX11Opcodes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="Env\App.ico" />
+    <EmbeddedResource Include="Env\Calc.resx">
+      <DependentUpon>Calc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Env\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Env\frmAddEditWatch.resx">
+      <DependentUpon>frmAddEditWatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Env\frmCompileMessages.resx">
+      <DependentUpon>frmCompileMessages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Env\frmEditor.resx">
+      <DependentUpon>frmEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Env\frmFind.resx">
+      <DependentUpon>frmFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Env\frmGoto.resx">
+      <DependentUpon>frmGoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Env\frmInputOutputFiles.resx">
+      <DependentUpon>frmInputOutputFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Env\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Env\frmMemoryView.resx">
+      <DependentUpon>frmMemoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Env\frmOptions.resx">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Env\frmRegistersView.resx">
+      <DependentUpon>frmRegistersView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Env\frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Env\frmStackView.resx">
+      <DependentUpon>frmStackView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Env\frmTaskList.resx">
+      <DependentUpon>frmTaskList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simulator\Console.resx">
+      <DependentUpon>Console.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,5 @@
+M:\FirstYear\ICAR\vax11-simulator-ng\PCSpeakerLib\bin\Debug\PCSpeakerLib.dll
+M:\FirstYear\ICAR\vax11-simulator-ng\PCSpeakerLib\bin\Debug\PCSpeakerLib.pdb
+M:\FirstYear\ICAR\vax11-simulator-ng\PCSpeakerLib\obj\Debug\PCSpeakerLib.csprojResolveAssemblyReference.cache
+M:\FirstYear\ICAR\vax11-simulator-ng\PCSpeakerLib\obj\Debug\PCSpeakerLib.dll
+M:\FirstYear\ICAR\vax11-simulator-ng\PCSpeakerLib\obj\Debug\PCSpeakerLib.pdb

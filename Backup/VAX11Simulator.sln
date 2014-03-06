@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VAX11Simulator", "VAX11Simulator.csproj", "{C1B22109-93B3-4D10-8E01-92D8757103C0}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCSpeakerLib", "PCSpeakerLib\PCSpeakerLib.csproj", "{53A87DB5-AAE2-470D-A32B-6CADAAEA1D79}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyBagLib", "PropertyBagLib\PropertyBagLib.csproj", "{6B1DF9F8-8DF9-4673-9C53-41423596DF65}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C1B22109-93B3-4D10-8E01-92D8757103C0}.Debug.ActiveCfg = Debug|.NET
+		{C1B22109-93B3-4D10-8E01-92D8757103C0}.Debug.Build.0 = Debug|.NET
+		{C1B22109-93B3-4D10-8E01-92D8757103C0}.Release.ActiveCfg = Release|.NET
+		{C1B22109-93B3-4D10-8E01-92D8757103C0}.Release.Build.0 = Release|.NET
+		{53A87DB5-AAE2-470D-A32B-6CADAAEA1D79}.Debug.ActiveCfg = Debug|.NET
+		{53A87DB5-AAE2-470D-A32B-6CADAAEA1D79}.Debug.Build.0 = Debug|.NET
+		{53A87DB5-AAE2-470D-A32B-6CADAAEA1D79}.Release.ActiveCfg = Release|.NET
+		{53A87DB5-AAE2-470D-A32B-6CADAAEA1D79}.Release.Build.0 = Release|.NET
+		{6B1DF9F8-8DF9-4673-9C53-41423596DF65}.Debug.ActiveCfg = Debug|.NET
+		{6B1DF9F8-8DF9-4673-9C53-41423596DF65}.Debug.Build.0 = Debug|.NET
+		{6B1DF9F8-8DF9-4673-9C53-41423596DF65}.Release.ActiveCfg = Release|.NET
+		{6B1DF9F8-8DF9-4673-9C53-41423596DF65}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
