@@ -136,14 +136,39 @@ namespace VAX11Environment
 			this.Close();
 		}
 
-		
 
 		private void TimerEventProcessorFirstDoc(object source, System.Timers.ElapsedEventArgs e)
 		{
 			timerFirstDoc.Enabled = false;
-			this.Visible = false;
-			mainApplication.Activate();
+            SetVisible(false);
+            if (mainApplication.InvokeRequired)
+            {
+                ActivateCallback callback = new ActivateCallback(mainApplication.Activate);
+                this.Invoke(callback, new object[] { });
+            }
+            else
+            {
+                mainApplication.Activate();
+            }
 		}
+
+        private delegate void ActivateCallback();
+
+        private delegate void SetVisibleCallback(bool value);
+
+        private void SetVisible(bool value)
+        {
+            if (this.InvokeRequired)
+            {
+                SetVisibleCallback d = new SetVisibleCallback(SetVisible);
+                this.Invoke(d, new object[] { value });
+            }
+            else
+            {
+                this.Visible = value;
+            }
+
+        }
 
 		
 		private void frmSplashScreen_VisibleChanged(object sender, System.EventArgs e)
