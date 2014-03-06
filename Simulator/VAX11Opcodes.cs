@@ -1080,7 +1080,8 @@ namespace VAX11Simulator
 
 			for (iCounter = 0; iCounter < srclen - objlen; ++iCounter)
 			{
-				if (obj == theSimulator.memory.Read(srcaddr+iCounter, objlen, false))
+                string str = (string)theSimulator.memory.Read(srcaddr + iCounter, objlen, true);
+				if (((string) obj).Equals(str))
 				{
 					bFoundMatch = true;
 					break;

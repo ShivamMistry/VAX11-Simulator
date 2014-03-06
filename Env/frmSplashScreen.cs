@@ -167,7 +167,7 @@ namespace VAX11Environment
             {
                 this.Visible = value;
             }
-
+            Control.CheckForIllegalCrossThreadCalls = false;
         }
 
 		

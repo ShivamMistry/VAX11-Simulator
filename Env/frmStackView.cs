@@ -166,10 +166,20 @@ namespace VAX11Environment
 			Regs = r;
 		}
 
+        private delegate void RefreshCallback();
+
 		public void UpdateStackDisplay()
 		{
 			if (iPrevSP != Regs[14].ReadLong()) CreateStackBag((uint)(iPrevSP = Regs[14].ReadLong()));
-			gridStack.Refresh();
+            if (gridStack.InvokeRequired)
+            {
+                RefreshCallback cb = new RefreshCallback(gridStack.Refresh);
+                this.Invoke(cb, new object[] { });
+            }
+            else
+            {
+                gridStack.Refresh();
+            }
 		}
 	}
 }

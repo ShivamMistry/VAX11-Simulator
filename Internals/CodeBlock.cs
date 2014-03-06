@@ -161,8 +161,17 @@ namespace VAX11Internals
 		public override bool Equals(object o) 
 		{
 			CodeBlock rhs = (CodeBlock)o;
-			if (_MachineCode.Length != rhs._MachineCode.Length) return false;
-			for (int iCounter = 0; iCounter < _MachineCode.Length; ++iCounter) if (_MachineCode[iCounter] != rhs._MachineCode[iCounter]) return false;
+            if (_MachineCode.Length != rhs._MachineCode.Length)
+            {
+                return false;
+            }
+            for (int iCounter = 0; iCounter < _MachineCode.Length; ++iCounter)
+            {
+                if (_MachineCode[iCounter] != rhs._MachineCode[iCounter])
+                {
+                    return false;
+                }
+            }
 			return true;
 		}
 
@@ -237,13 +246,23 @@ namespace VAX11Internals
 			return CastingHelpFunction(b, 8);
 		}
 
-		/// <summary>
-		/// Converts CodeBlock to int. If the CodeBlock is bigger than 4, it takes
-		/// only the 4 first bytes
-		/// </summary>
-		/// <param name="b">CodeBlock to convert</param>
-		/// <returns>int value</returns>
-		public static implicit operator int(CodeBlock b)
+        public static explicit operator string(CodeBlock b)
+        {
+            string str = "";
+            for (int i = 0; i < b.Size; i++)
+            {
+                str += b[i].ToString();
+            }
+            return str;
+        }
+
+        /// <summary>
+        /// Converts CodeBlock to int. If the CodeBlock is bigger than 4, it takes
+        /// only the 4 first bytes
+        /// </summary>
+        /// <param name="b">CodeBlock to convert</param>
+        /// <returns>int value</returns>
+        public static implicit operator int(CodeBlock b)
 		{
 			return (int)CastingHelpFunction(b, 4);
 		}

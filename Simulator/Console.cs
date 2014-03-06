@@ -493,7 +493,7 @@ namespace VAX11Simulator
 		/// text if exsist
 		/// </summary>
 		/// <param name="text">the text that need to print</param>
-		private void Write (CodeBlock text)
+		public void Write (CodeBlock text)
 		{
 			if (!bTextMode) 
 			{
